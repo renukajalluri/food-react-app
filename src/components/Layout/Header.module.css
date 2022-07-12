@@ -1,0 +1,81 @@
+.header{
+    background-size: cover;
+    background-position: center;
+    width: 100%;  
+    height: 60vh;
+}
+ .nav{
+     position: fixed;
+     z-index: 10;
+     top:0;
+     height: 100px;
+     padding: 5px;
+     padding: -10px ;
+     width: 100%;  
+     display: flex;
+     justify-content: space-between;
+    /* box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25); */
+    /* border-bottom: 1px solid #fff; */
+}
+.logo{
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    color: #F9EFAB;
+    padding: 7px;
+    margin-top: 6px;
+    transition: width .3s;
+}
+.logo::after{
+    content: "";
+    width: 2%;
+    height: 2px;
+    background-color: #F9EFAB;
+    position: absolute;
+    top:60%;
+    bottom: 0%;
+    left:2% ;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.logo:hover::after {
+    width: 12%;
+}
+.resto{
+   font-size:x-large;
+}
+
+.sub{
+    text-align: center;
+    margin-top: -200px ;
+    /* margin: -300px 200px; */
+    animation: sub-anime 1s ease-out ;
+    font-family: 'Tangerine';
+    font-size: 40px;
+    color: #F9EFAB;
+    /* text-shadow: 4px 4px 4px #aaa; */
+}
+
+@keyframes sub-anime {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width:320px){
+      .logo{
+          font-size: 25px;
+          
+      }
+      .resto{
+        font-size:medium;
+        display: inline;
+      }
+  }

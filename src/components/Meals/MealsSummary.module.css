@@ -1,0 +1,28 @@
+.summary {
+    height:auto;
+    /* background-color: #383838; */
+    background-color:#f8f7f2; 
+    box-shadow: 0 0px 18px 8px rgba(0, 0, 0, 0.2); 
+    /* height: 150px; */
+    text-align: center;
+    max-width: 35rem;
+    color: #e7cf35;
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+    position: relative;
+    border-radius: 14px;
+    /* padding: 1rem; */
+    padding: 0.3rem 0.7rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.summary>p::first-letter{
+    color: brown;
+    font-size: 150%;
+}
+  
+.spcl{
+  color: brown;
+}
